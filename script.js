@@ -1,4 +1,12 @@
-function ageCalculator() {  
+function ageCalculator() {
+var firstName = document.getElementById("fName").value;
+var lastName = document.getElementById("lName").value;
+var gender = document.querySelector(".form-check-input:checked").value;
+var weight = document.getElementById("weight").value
+var height = document.getElementById("height").value
+
+console.log(firstName +" "+ lastName + " "+ gender+ " "+weight+" "+height)
+ 
     var userinput = document.getElementById("DOB").value;  
     var dob = new Date(userinput);  
     if(userinput==null || userinput=='') {  
@@ -19,8 +27,9 @@ function ageCalculator() {
     var age = Math.abs(year - 1970);  
       
     //display the calculated age  
-    return document.getElementById("result").innerHTML =    
-             "Age is: " + age + " years. ";  
+   console.log(age)
     }  
+    
 } 
+
     
